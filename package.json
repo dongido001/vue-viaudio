@@ -1,6 +1,6 @@
 {
   "name": "@dongido/vue-viaudio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./dist/vue-viaudio.common.js",
   "files": [
     "dist/*",
@@ -9,6 +9,25 @@
     "*.json",
     "*.js"
   ],
+    "keywords": [
+    "vue",
+    "vue.js",
+    "video",
+    "audio",
+    "media",
+    "dynamic",
+    "video",
+    "dynamic",
+    "audio",
+    "dynamic",
+    "media",
+    "vue",
+    "HTML5",
+    "media"
+  ],
+  "author": "Onwuka Gideon",
+  "license": "ISC",
+  "description": "A package that helps to dynamically/reactively add video and audio elemnents in vue",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
