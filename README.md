@@ -18,6 +18,11 @@ Install the package:
   yarn add @dongido/vue-viaudio
 ```
 
+#### Demos
+
+- [Basic usage demo](https://codesandbox.io/s/m5o1vl2pm9)
+- [Reactive example](https://codesandbox.io/s/m4601xq0zp)
+
 ## Example Usage
 
 ### Basic usage - Play a video
