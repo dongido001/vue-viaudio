@@ -200,12 +200,12 @@ export default {
 </template>
 ```
 
-### Contribute
-
 ## Audio Events
 
 You can also listen to audio element events when they happen. These events are available when you pass the prop `kind` as `audio`. You can listen to it same way as the video events.
 
 You can read about these events [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio#Events).
 
-[GitHub]()
+### Contribute
+
+[GitHub](https://github.com/dongido001/vue-viaudio)
