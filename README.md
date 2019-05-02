@@ -49,7 +49,11 @@ export default {
   },
   methods: {
     handle() {
+      console.log('Video paused!, playing in 2 sec...')
 
+      setTimeout( () => {
+        this.$refs.fish.play() 
+      }, 2000)
     }
   }
 }
