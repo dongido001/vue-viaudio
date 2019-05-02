@@ -1,28 +1,5 @@
-# vue-viaudio
-
-Dynamically/Reactively render videos and audios.
-
-## Project setup
-
-Install the package:
-
-#### Using npm
-
-```
-    npm i @dongido/vue-viaudio
-```
-
-#### OR Using yarn
-
-```
-    yarn add @dongido/vue-viaudio
-```
-
-## Example Usage
-
-```vue
 <template>
-  <div id="app">
+  <div class="example">
     <Media 
       :kind="'video'"
       :isMuted="(false)"
@@ -40,31 +17,22 @@ Install the package:
 </template>
 
 <script>
-import Media from '@dongido/vue-viaudio'
+import Media from './vue-viaudio'
+import { setTimeout } from 'timers';
 
 export default {
-  name: 'app',
   components: {
-    Media
+   Media
   },
+  name: 'Example',
   methods: {
     handle() {
+      console.log('Video paused!, playing in 2 sec...')
 
+      setTimeout( () => {
+        this.$refs.fish.play() 
+      }, 2000)
     }
   }
 }
 </script>
-
-<style>
-#app {
-  width: 100%;
-  text-align: center;
-  margin-top: 40vh;
-}
-</style>
-
-```
-
-### Contribute
-
-[GitHub]()
