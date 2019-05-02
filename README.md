@@ -133,7 +133,7 @@ The `:srcObject` is particularly useful when you need to render a stream source 
 
 | Props                    | Required                                | Description                     | 
 | ------------------------ | --------------------------------------- | -------------------------       |
-| `src`  [Array | String ] | *True* (if `srcObject` is not provided) | The source of the media         |
+| `src`  [Array `|` String ] | *True* (if `srcObject` is not provided) | The source of the media         |
 | `srcObject` [Object]     | *True* (if `src` is not provided)       | The source of the media         |
 | `kind` [String]          | *True*                                  | It's either `audio` or `video`. |
 
