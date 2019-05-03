@@ -22,6 +22,7 @@ Install the package:
 
 - [Basic usage demo](https://codesandbox.io/s/m5o1vl2pm9)
 - [Reactive example](https://codesandbox.io/s/m4601xq0zp)
+- [Dynamically Render Video source](https://codesandbox.io/s/yvon3v5r5z)
 
 ## Example Usage
 
