@@ -141,6 +141,7 @@ The `:srcObject` is particularly useful when you need to render a stream source 
 | `src`  [Array or String ] | *True* (if `srcObject` is not provided) | The source of the media         |
 | `srcObject` [Object]     | *True* (if `src` is not provided)       | The source of the media         |
 | `kind` [String]          | *True*                                  | It's either `audio` or `video`. |
+| `isMuted` [String]       | *False*                                 | Determines if a video will bemuted or not. It's either true or false. |
 
 It accepts all [video](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#Attributes) and [audio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio#Attributes) attributes. You just need to pass the one you need. You can also bind them if you need some reactivity.
 
