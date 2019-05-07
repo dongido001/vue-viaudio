@@ -1,6 +1,6 @@
 {
   "name": "@dongido/vue-viaudio",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/dongido001/vue-viaudio/blob/master/README.md",
   "main": "./dist/vue-viaudio.common.js",
   "files": [
@@ -18,9 +18,7 @@
     "media",
     "dynamic",
     "video",
-    "dynamic",
     "audio",
-    "dynamic",
     "media",
     "vue",
     "HTML5",
