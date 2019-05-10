@@ -23,10 +23,11 @@ Install the package:
 - [Basic usage demo](https://codesandbox.io/s/m5o1vl2pm9)
 - [Reactive example](https://codesandbox.io/s/m4601xq0zp)
 - [Dynamically Render Video source](https://codesandbox.io/s/yvon3v5r5z)
+- [Take photo using WebRTC to access the camera on a computer or mobile phone](https://codesandbox.io/s/mozr7vzw99)
 
 ## Example Usage
 
-### Basic usage - Play a video
+### Basic usage - Play a video (`:src`)
 
 ```javascript
 <script>
@@ -76,6 +77,48 @@ export default {
     </Media>
   </div>
 </template>
+```
+
+### Play a video - WebRTC example (`:srcObject`)
+
+```javascript
+<template>
+  <div class="example">
+    <Media
+      :kind="'video'"
+      :srcObject="streamObject"
+      autoplay
+      playinline
+    />
+  </div>
+</template>
+
+<script>
+import Media from './vue-viaudio'
+import { setTimeout } from 'timers';
+
+export default {
+  components: {
+   Media
+  },
+  name: 'Example',
+  data() {
+    return {
+      streamObject: {}
+    }
+  },
+  mounted() {
+    navigator.mediaDevices
+      .getUserMedia({ video: true, audio: false })
+      .then(stream => {
+        this.streamObject = stream;
+      })
+      .catch(function(err) {
+        console.log("An error occurred: " + err);
+      })
+  },
+}
+</script>
 ```
 
 A bit advanced usage - with events
@@ -216,3 +259,16 @@ You can read about these events [here](https://developer.mozilla.org/en-US/docs/
 ### Contribute
 
 [GitHub](https://github.com/dongido001/vue-viaudio)
+
+# Changelog
+
+Notable changes:
+
+## [0.2.3] - 2019-04-10
+
+### Added
+- Added `srcObject` props use-case using WebRTC.
+### Changed
+- Updated the props required types
+- Fix srcObject that was not working
+### Removed

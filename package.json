@@ -1,14 +1,11 @@
 {
   "name": "@dongido/vue-viaudio",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "homepage": "https://github.com/dongido001/vue-viaudio/blob/master/README.md",
   "main": "./dist/vue-viaudio.common.js",
   "files": [
     "dist/*",
-    "src/*",
-    "public/*",
-    "*.json",
-    "*.js"
+    "src/components/*"
   ],
     "keywords": [
     "vue",
