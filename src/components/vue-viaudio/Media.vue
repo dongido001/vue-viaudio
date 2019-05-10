@@ -3,7 +3,7 @@
     functional: true,
     name: 'Media',
     render: function (createElement, context) {
-      if (!['video', 'audio'].includes(context.props.kind) ) {
+      if ( !['video', 'audio'].includes(context.props.kind.toLowerCase()) ) {
         return createElement()
       }
       
@@ -18,23 +18,21 @@
       }
 
       if (context.props.srcObject) {
-        domProps.srcObject = srcObject
+        domProps.srcObject = context.props.srcObject
       }
 
       if (context.props.ref) {
         context.data.ref = context.props.ref
       }
       
-      if (context.props.attrs) {
-        context.data.attrs = {
-          ...context.data.attrs, 
-          ...context.props.attrs
-        }
+      context.data.attrs = {
+        ...context.data.attrs, 
+        ...context.props.attrs
       }
 
       context.data.domProps = domProps
 
-      return createElement(context.props.kind, context.data)
+      return createElement(context.props.kind.toLowerCase(), context.data)
     },
     props: {
       kind: {
@@ -42,22 +40,32 @@
         required: true
       },
       className: {
-        type: Object | String | Array
+        type: Object | String | Array,
+        required: false
       },
       styles: {
-        type: Object | String | Array
+        type: Object | String | Array,
+        required: false
       },
       ref: {
-        type: String
+        type: String,
+        required: false
       },
       isMuted: {
-        type: Boolean
+        type: Boolean,
+        required: false
       },
       poster: {
-        type: String
+        type: String,
+        required: false
       },
       src: {
-        type: String | Array
+        type: String | Array,
+        required: false
+      },
+      srcObject: {
+        type: Object,
+        required: false
       }
     },
   }
