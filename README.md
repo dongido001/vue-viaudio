@@ -264,7 +264,7 @@ You can read about these events [here](https://developer.mozilla.org/en-US/docs/
 
 Notable changes:
 
-## [0.2.3] - 2019-04-10
+## [0.2.4] - 2019-04-10
 
 ### Added
 - Added `srcObject` props use-case using WebRTC.

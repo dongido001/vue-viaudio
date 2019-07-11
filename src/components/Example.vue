@@ -2,15 +2,15 @@
   <div class="example">
     <Media 
       :kind="'video'"
-      :isMuted="(false)"
-      :src="['https://www.w3schools.com/html/mov_bbb.mp4']"
+      :src="['https://www.w3schools.com/html/mov_bbb.mp4', 'https://www.w3schools.com/html/mov_bbb.mp4']"
       :poster="'https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217'"
       :autoplay="true"
       :controls="true"
       :loop="true"
-      @pause="handle()"
-      :ref="'fish'"
-      :style="{width: '500px'}"
+      @pause="handle"
+      ref="'fish'"
+      style="width: 500px"
+      :muted="muted"
     >
     </Media>
   </div>
@@ -18,11 +18,15 @@
 
 <script>
 import Media from './vue-viaudio'
-import { setTimeout } from 'timers';
 
 export default {
   components: {
    Media
+  },
+  data () {
+    return {
+      muted: true
+    }
   },
   name: 'Example',
   methods: {
