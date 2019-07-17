@@ -7,6 +7,13 @@
         return createElement()
       }
 
+      if (context.props.srcObject) {
+        context.data.domProps = {
+          playsInline: context.props.playsInline || true,
+          autoplay: context.props.autoplay || true,
+        }
+      }
+
       context.data.domProps = {
         ...context.props,
         ...context.data.domProps
