@@ -20,7 +20,7 @@ Install the package:
 
 #### On the browser
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@dongido/vue-viaudio@0.2.9/dist/vue-viaudio.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@dongido/vue-viaudio@0.3.0/dist/vue-viaudio.umd.js"></script>
 ```
  - [Example usage](https://codesandbox.io/s/vue-viaudio-on-the-browser-u7y87)
 
@@ -133,7 +133,7 @@ export default {
   <div id="app">
     <Media 
       :kind="'video'"
-      :isMuted="(false)"
+      :muted="(false)"
       :src="['https://www.w3schools.com/html/mov_bbb.mp4']"
       :poster="'https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217'"
       :autoplay="true"
@@ -191,7 +191,7 @@ The `:srcObject` is particularly useful when you need to render a stream source 
 | `src`  [Array or String ] | *True* (if `srcObject` is not provided) | The source of the media         |
 | `srcObject` [Object]     | *True* (if `src` is not provided)       | The source of the media         |
 | `kind` [String]          | *True*                                  | It's either `audio` or `video`. |
-| `isMuted` [String]       | *False*                                 | Determines if a video will be muted or not. It's either true or false. |
+| `muted` [String]       | *False*                                 | Determines if a video will be muted or not. It's either true or false. |
 
 It accepts all [video](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#Attributes) and [audio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio#Attributes) attributes. You just need to pass the one you need. You can also bind them if you need some reactivity.
 
@@ -277,4 +277,12 @@ Notable changes:
 ### Changed
 - Updated the props required types
 - Fix srcObject that was not working
+### Removed
+
+## [0.3.0] - 2019-07-16
+
+### Fixes
+- StreamObject not playing by default
+### Changed
+- `isMuted` props is not `muted`
 ### Removed

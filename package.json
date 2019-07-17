@@ -1,6 +1,6 @@
 {
   "name": "@dongido/vue-viaudio",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "homepage": "https://github.com/dongido001/vue-viaudio",
   "main": "./dist/vue-viaudio.umd.js",
   "files": [
