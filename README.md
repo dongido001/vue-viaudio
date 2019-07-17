@@ -127,7 +127,7 @@ export default {
 </script>
 ```
 
-A bit advanced usage - with events
+### A bit advanced usage - with events
 ```javascript
 <template>
   <div id="app">
