@@ -20,7 +20,7 @@ Install the package:
 
 #### On the browser
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@dongido/vue-viaudio@0.2.8/dist/vue-viaudio.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@dongido/vue-viaudio@0.2.9/dist/vue-viaudio.umd.js"></script>
 ```
  - [Example usage](https://codesandbox.io/s/vue-viaudio-on-the-browser-u7y87)
 
@@ -127,7 +127,7 @@ export default {
 </script>
 ```
 
-A bit advanced usage - with events
+### A bit advanced usage - with events
 ```javascript
 <template>
   <div id="app">
