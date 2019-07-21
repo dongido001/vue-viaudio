@@ -284,5 +284,5 @@ Notable changes:
 ### Fixes
 - StreamObject not playing by default
 ### Changed
-- `isMuted` props is not `muted`
+- `isMuted` props is now `muted`
 ### Removed
