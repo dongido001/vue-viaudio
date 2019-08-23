@@ -20,7 +20,7 @@ Install the package:
 
 #### On the browser
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@dongido/vue-viaudio@0.3.0/dist/vue-viaudio.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@dongido/vue-viaudio@0.3.2/dist/vue-viaudio.umd.js"></script>
 ```
  - [Example usage](https://codesandbox.io/s/vue-viaudio-on-the-browser-u7y87)
 
@@ -279,7 +279,7 @@ Notable changes:
 - Fix srcObject that was not working
 ### Removed
 
-## [0.3.0] - 2019-07-16
+## [0.3.2] - 2019-07-16
 
 ### Fixes
 - StreamObject not playing by default
