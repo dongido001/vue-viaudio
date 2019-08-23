@@ -44,7 +44,6 @@
         required: false
       },
       srcObject: {
-        type: Object,
         required: false
       }
     },
